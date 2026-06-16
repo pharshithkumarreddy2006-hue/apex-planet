@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Web Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>My Web Project</h1>
+<nav>
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('contact')">Contact</button>
+<button onclick="showPage('tasks')">Tasks</button>
+</nav>
+</header>
+
+<div id="home" class="page">
+<h2>Home</h2>
+<p>Welcome to my HTML, CSS and JavaScript project.</p>
+</div>
+
+<div id="contact" class="page">
+<h2>Contact Form</h2>
+<form id="contactForm">
+<input type="text" id="name" placeholder="Enter Name">
+<input type="email" id="email" placeholder="Enter Email">
+<button type="submit">Submit</button>
+</form>
+<p id="error"></p>
+</div>
+
+<div id="tasks" class="page">
+<h2>To-Do List</h2>
+<input type="text" id="task" placeholder="Add Task">
+<button onclick="addTask()">Add</button>
+<ul id="list"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
