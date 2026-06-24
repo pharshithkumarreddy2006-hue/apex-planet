@@ -1,0 +1,90 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #8a2be2, #ff007f);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 0;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #4b00ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #6a00ff;
+}
+
+.option {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.hidden {
+    display: none;
+}
+
+.correct {
+    background-color: rgba(0, 255, 0, 0.4);
+}
+
+.wrong {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+/* Circle Score */
+#circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    animation: popIn 0.6s ease forwards;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
