@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>My Project</h1>
+<nav>
+<button onclick="showSection('about')">About</button>
+<button onclick="showSection('projects')">Projects</button>
+<button onclick="showSection('todo')">To-Do</button>
+<button onclick="showSection('products')">Products</button>
+<button onclick="showSection('contact')">Contact</button>
+</nav>
+</header>
+
+<section id="about" class="active">
+<h2>About Me</h2>
+<p>Web Developer learning HTML CSS and JavaScript.</p>
+</section>
+
+<section id="projects" class="hidden">
+<h2>Projects</h2>
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Responsive website project.</p>
+</div>
+<div class="card">
+<h3>To-Do App</h3>
+<p>Local storage task application.</p>
+</div>
+<div class="card">
+<h3>Product Listing</h3>
+<p>Filter and sort products.</p>
+</div>
+</section>
+
+<section id="todo" class="hidden">
+<h2>To-Do List</h2>
+<input id="taskInput" placeholder="Enter Task">
+<button onclick="addTask()">Add</button>
+<ul id="taskList"></ul>
+</section>
+
+<section id="products" class="hidden">
+<h2>Products</h2>
+
+<select id="filterCategory" onchange="filterProducts()">
+<option value="all">All</option>
+<option value="electronics">Electronics</option>
+<option value="fashion">Fashion</option>
+<option value="accessories">Accessories</option>
+</select>
+
+<select id="sortOption" onchange="sortProducts()">
+<option value="">Sort</option>
+<option value="priceLow">Price Low</option>
+<option value="priceHigh">Price High</option>
+<option value="rating">Rating</option>
+</select>
+
+<div id="productList"></div>
+</section>
+
+<section id="contact" class="hidden">
+<h2>Contact</h2>
+
+<form id="contactForm">
+
+<div class="contact-fields">
+
+<input id="name" placeholder="Name">
+
+<input id="email" placeholder="Email">
+
+<input id="mobile" placeholder="Mobile Number">
+
+</div>
+
+<textarea id="message" placeholder="Message"></textarea>
+
+<button>Submit</button>
+
+</form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Project</h1>
+        <nav>
+            <button onclick="showSection('about')">About</button>
+            <button onclick="showSection('projects')">Projects</button>
+            <button onclick="showSection('todo')">To-Do</button>
+            <button onclick="showSection('products')">Products</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </nav>
+    </header>
+
+    <section id="about" class="active">
+        <h2>About Me</h2>
+        <p>Web Developer learning HTML CSS and JavaScript.</p>
+    </section>
+
+    <section id="projects" class="hidden">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive website project.</p>
+        </div>
+        <div class="card">
+            <h3>To-Do App</h3>
+            <p>Local storage task application.</p>
+        </div>
+        <div class="card">
+            <h3>Product Listing</h3>
+            <p>Filter and sort products.</p>
+        </div>
+    </section>
+
+    <section id="todo" class="hidden">
+        <h2>To-Do List</h2>
+        <input id="taskInput" placeholder="Enter Task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </section>
+
+    <section id="products" class="hidden">
+        <h2>Products</h2>
+
+        <select id="filterCategory" onchange="filterProducts()">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="accessories">Accessories</option>
+        </select>
+
+        <select id="sortOption" onchange="sortProducts()">
+            <option value="">Sort</option>
+            <option value="priceLow">Price Low</option>
+            <option value="priceHigh">Price High</option>
+            <option value="rating">Rating</option>
+        </select>
+
+        <div id="productList"></div>
+    </section>
+
+    <section id="contact" class="hidden">
+        <h2>Contact</h2>
+
+        <form id="contactForm">
+
+            <div class="contact-fields">
+
+                <input id="name" placeholder="Name">
+
+                <input id="email" placeholder="Email">
+
+                <input id="mobile" placeholder="Mobile Number">
+
+            </div>
+
+            <textarea id="message" placeholder="Message"></textarea>
+
+            <button>Submit</button>
+
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
